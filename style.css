@@ -3,7 +3,7 @@
   padding: 16px; }
 
 .email-container, .pre-header {
-  max-width: 500px;
+  max-width: 420px;
   background: #ffe000;
   font-family: sans-serif;
   font-size: 16px;
@@ -24,20 +24,17 @@
 .sparkler {
   position: absolute;
   right: 0;
-  top: 180px;
-  width: 205px;
-}
-
-
-.description {
-  padding-right: 48px !important;
+  top: 300px;
+  width: 140px;
 }
 
 .align-right {
   text-align: right;
 }
 .float-right {
+  position: relative;
   float: right;
+  display: block;
 }
 
 .sixty-four {
@@ -52,9 +49,33 @@
   text-align: center;
 }
 
+
+
+
+
 /* Typography */
+
+  @font-face {
+    font-family: 'Haas Grot Text Web';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://s3.ca-central-1.amazonaws.com/ysdn/NeueHaasGrotText-55Roman-Web.woff') format('woff'),
+    url('https://s3.ca-central-1.amazonaws.com/ysdn/NeueHaasGrotText-55Roman-Web.woff2') format('woff2');
+  }
+
+
+/*
+@font-face {
+  font-family: 'Haas Grot Text Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/NeueHaasGrotDisp-55Roman-Web.woff') format('woff'),
+  url('fonts/NeueHaasGrotDisp-55Roman-Web.woff2') format('woff2');
+}*/
+
 h1 { /* Dates */
-  font-size: 86px;
+  font-family: sans-serif;
+  font-size: 64px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -62,6 +83,7 @@ h1 { /* Dates */
 }
 
 h2 {
+  font-family: sans-serif;
   font-size: 42px;
   font-weight: 400;
   text-transform: uppercase;
@@ -70,6 +92,7 @@ h2 {
 }
 
 h3 {
+  font-family: sans-serif;
   font-size: 32px;
   font-weight: 400;
   margin-top: 0;
@@ -77,6 +100,7 @@ h3 {
 }
 
 h4 { /* Links, 2018 */
+  font-family: sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-top: 0;
@@ -85,14 +109,17 @@ h4 { /* Links, 2018 */
 }
 
 h5 { /* event captions */
-  font-size: 18px;
+  font-family: sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 24px;
   margin-top: 0;
   margin-bottom: 0;
+
 }
 
 h6 { /* sponsor headlines */
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -104,9 +131,10 @@ h6 { /* sponsor headlines */
 
 
 p {
-  font-size: 20px;
+  font-family: sans-serif;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 28px; }
+  line-height: 21px; }
 
 a {
   color: #000;
@@ -163,50 +191,3 @@ a:hover {
 .no-top {
   border-top: 0px !important;
 }
-
-
-/* Media queries */
-
-@media screen and (max-width: 600px) {
-  .sparkler {
-    top: 280px;
-    width: 160px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-}
-@media screen and (max-width: 460px) {
-  .sparkler {
-    top: 300px;
-    width: 120px;
-  }
-
-  .mobile-no-show {
-    display: none;
-  }
-
-  .gladstone h5 {
-    line-height: 18px;
-    margin-bottom: 16px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-}
-
-
-/*# sourceMappingURL=style.css.map */
