@@ -10,6 +10,7 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 20px;
+  position: relative;
 }
 
 .pre-header {
@@ -20,6 +21,14 @@
 
 
 /* General styling */
+.sparkler {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  width: 205px;
+}
+
+
 .description {
   padding-right: 48px !important;
 }
@@ -87,7 +96,7 @@ h6 { /* sponsor headlines */
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: 18px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -153,6 +162,50 @@ a:hover {
 /* Other common styles */
 .no-top {
   border-top: 0px !important;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  .sparkler {
+    top: 280px;
+    width: 160px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width: 460px) {
+  .sparkler {
+    top: 300px;
+    width: 120px;
+  }
+
+  .mobile-no-show {
+    display: none;
+  }
+
+  .gladstone h5 {
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
 
 
