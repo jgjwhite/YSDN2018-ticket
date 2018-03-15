@@ -1,6 +1,7 @@
 .email-background {
   background: #fff;
-  padding: 16px; }
+  padding: 8px;
+}
 
 .email-container, .pre-header {
   max-width: 420px;
@@ -8,8 +9,8 @@
   font-family: sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  overflow: hidden;
-  padding: 20px;
+  /*overflow: hidden;*/
+  padding: 8px;
   position: relative;
 }
 
@@ -52,26 +53,6 @@
 
 
 
-
-/* Typography */
-
-  @font-face {
-    font-family: 'Haas Grot Text Web';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://s3.ca-central-1.amazonaws.com/ysdn/NeueHaasGrotText-55Roman-Web.woff') format('woff'),
-    url('https://s3.ca-central-1.amazonaws.com/ysdn/NeueHaasGrotText-55Roman-Web.woff2') format('woff2');
-  }
-
-
-/*
-@font-face {
-  font-family: 'Haas Grot Text Web';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/NeueHaasGrotDisp-55Roman-Web.woff') format('woff'),
-  url('fonts/NeueHaasGrotDisp-55Roman-Web.woff2') format('woff2');
-}*/
 
 h1 { /* Dates */
   font-family: sans-serif;
